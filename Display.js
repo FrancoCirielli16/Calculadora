@@ -37,7 +37,11 @@ class Display{
    computar(tipo){
         this.tipoOperacion !== "igual" && this.calcular();
         this.tipoOperacion = tipo;
-        this.valorAnterior = this.valorActual || this.valorAnterior; 
+        if (this.valorActual === '' || this.valorActual === undefined){
+            this.valorAnterior = this.valorAnterior;
+        }
+        else 
+            this.valorAnterior = this.valorActual;
         this.valorActual = '';
         this.imprimirValores();
     }
