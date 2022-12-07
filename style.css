@@ -1,3 +1,4 @@
+
 [data-theme="light"] {
     --bg-gradient-0: rgb(114, 255, 128);
     --bg-gradient-1: hsl(191, 98%, 65%);
@@ -46,7 +47,8 @@ body{
    display: flex;
    justify-content: space-between;
    position: absolute;
-   padding: 25px 60px;
+   left: 520px;
+   top:60px;
 }
 
 /* Estilos del switch */
