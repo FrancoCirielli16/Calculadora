@@ -1,9 +1,3 @@
-
-:root{
-    font-family: ;
-}
-
-
 [data-theme="light"] {
     --bg-gradient-0: rgb(114, 255, 128);
     --bg-gradient-1: hsl(191, 98%, 65%);
