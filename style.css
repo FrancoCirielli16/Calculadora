@@ -44,11 +44,10 @@ body{
 }
 
 .them{
-   display: flex;
-   justify-content: space-between;
-   position: absolute;
-   left: 520px;
-   top:60px;
+    position: relative;
+    margin-right: auto;
+    top: -10px;
+    left: -60px;
 }
 
 /* Estilos del switch */
@@ -109,6 +108,13 @@ input:checked + .slider:before {
     height: 100vh;
 }
 
+.box{
+    height: min-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .calculator {
     display: grid;
     grid-template-columns: repeat(4,75px);
@@ -150,7 +156,7 @@ input:checked + .slider:before {
 }
 
 .carita{
-    opacity: 30%;
+    opacity: 50%;
     place-self: center;
 }
 
@@ -186,4 +192,3 @@ button:focus{
 #valor-anterior{
     font-size: 2em;
 }
-
