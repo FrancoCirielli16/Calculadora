@@ -1,17 +1,8 @@
-/*
+
 :root{
-    --bg-gradient-0: rgb(153, 0, 255);
-    --bg-gradient-1: hsl(337, 100%, 33%);
-    --bg-gradient-2: hsl(338, 100%, 14%);
-    --bg-gradient-3: hsl(208, 97%, 17%);
-    --bg-gradient-4: hsl(209, 100%, 12%);
-    --bg-calculator-0: rgb(255, 255, 255);
-    --text:rgb(255, 255, 255);
-    --number:rgb(0, 0, 0);
-    --background:rgb(255, 255, 255);
-    --primary:#000;
+    font-family: ;
 }
-*/
+
 
 [data-theme="light"] {
     --bg-gradient-0: rgb(114, 255, 128);
@@ -19,11 +10,13 @@
     --bg-gradient-2: hsl(47, 100%, 68%);
     --bg-gradient-3: hwb(225 36% 0%);
     --bg-gradient-4: hsl(305, 82%, 63%);
-    --bg-calculator-0: rgb(1, 173, 32);
+    --bg-calculator-0: rgb(98, 98, 98);
     --text:rgb(0, 0, 0);
     --number:#ffff;
     --background:rgba(0, 0, 0, 0.534);
     --primary:rgb(255, 255, 255);
+    --display: #f9f9f9;
+    --numberDisplay:#000;
 }
 
 [data-theme="dark"] {
@@ -35,8 +28,10 @@
     --bg-calculator-0: rgb(255, 255, 255);
     --text:rgb(255, 255, 255);
     --number:#000;
-    --background:rgb(255, 255, 255);
+    --background:rgba(255, 255, 255, 0.83);
     --primary:#000;
+    --display: #262626;
+    --numberDisplay:rgb(255, 255, 255);
 }
 
 body{
@@ -143,7 +138,7 @@ input:checked + .slider:before {
 }
 
 .display {
-    color:rgb(255, 255, 255);
+    color: var(--numberDisplay);
     padding: 16px;
     grid-column: 1/-1 ;
     display: flex;
@@ -154,7 +149,7 @@ input:checked + .slider:before {
     border-radius: 20px;
     margin: 10px 10px 20px;
     box-shadow: 0px 0px 0px 10px #a2a2a233;
-    background: #262626;
+    background: var(--display);
     overflow-y: auto;
 }
 
